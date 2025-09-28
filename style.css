@@ -1,0 +1,31 @@
+/* orbit-theme.css - small custom styles (very simple) */
+
+/* keep background subtle */
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+/* card tweaks: gentle rounded corners and consistent spacing */
+.card {
+  border-radius: 12px;
+}
+
+/* make the price a bit tighter visually */
+.display-6 {
+  font-size: 2.1rem; /* slightly smaller than default bootstrap for neatness */
+}
+
+/* a small accent for the primary card border */
+.card.border-primary {
+  border-width: 1.5px;
+}
+
+/* ensure list items use consistent spacing */
+.card ul li {
+  line-height: 1.4;
+}
+
+/* responsive tweak: center footer on small screens */
+@media (max-width: 576px) {
+  footer { text-align: center; }
+}
