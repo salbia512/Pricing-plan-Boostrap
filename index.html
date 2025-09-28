@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Comet Pricing</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Simple custom styles in a separate file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <main class="container py-5">
+    <!-- Header -->
+    <header class="text-center mb-5">
+      <h1 class="h3 fw-bold">Comet — Simple Pricing</h1>
+      <p class="text-muted mb-0">Pick a plan that fits. No fuss, just easy options.</p>
+    </header>
+
+    <!-- Pricing row: 3 cards -->
+    <section class="row g-4 justify-content-center">
+
+      <!-- Basic Plan -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Basic</h5>
+            <p class="text-muted mb-3">For personal projects</p>
+
+            <div class="display-6 fw-bold mb-3">$0<span class="fs-6 text-muted">/mo</span></div>
+
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2">✓ 1 project</li>
+              <li class="mb-2">✓ Basic support</li>
+              <li class="mb-2">✕ Team features</li>
+            </ul>
+
+            <!-- mt-auto pushes the button to the bottom of the card body -->
+            <a href="#" class="btn btn-outline-primary mt-auto">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro Plan (recommended) -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-primary shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="badge bg-primary text-white mb-2 align-self-center">Most popular</div>
+            <h5 class="card-title">Pro</h5>
+            <p class="text-muted mb-3">For freelancers & small teams</p>
+
+            <div class="display-6 fw-bold mb-3">$12<span class="fs-6 text-muted">/mo</span></div>
+
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2">✓ 10 projects</li>
+              <li class="mb-2">✓ Priority support</li>
+              <li class="mb-2">✓ Team features</li>
+            </ul>
+
+            <a href="#" class="btn btn-primary mt-auto">Subscribe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Business</h5>
+            <p class="text-muted mb-3">For growing teams</p>
+
+            <div class="display-6 fw-bold mb-3">$49<span class="fs-6 text-muted">/mo</span></div>
+
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2">✓ Unlimited projects</li>
+              <li class="mb-2">✓ Dedicated support</li>
+              <li class="mb-2">✓ SSO & audit logs</li>
+            </ul>
+
+            <a href="#" class="btn btn-outline-primary mt-auto">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Simple footer -->
+    <footer class="text-center text-muted mt-5">
+      <small>© 2025 Comet — Simple plans, clear pricing</small>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Small helpful comments for difficult lines (no logic here, just notes) -->
+  <!--
+    .col-12 col-md-4  -> responsive columns: full width on small screens, 1/3 width on md+
+    .h-100            -> makes each card the same height inside its column
+    .d-flex .flex-column -> stacks card content vertically, so mt-auto pushes button to bottom
+    .display-6         -> Bootstrap display utility for large numeric price styling
+    .badge.bg-primary  -> small highlighted label for recommended plan
+    .shadow-sm         -> subtle shadow to lift the card visually
+  -->
+</body>
+</html>
